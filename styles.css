@@ -3,6 +3,10 @@ body {
   color: white;
 }
 
+li {
+  list-style-type: none;
+}
+
 img.nav-icon {
   height: 20px;
 }
