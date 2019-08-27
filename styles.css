@@ -10,3 +10,31 @@ li {
 img.nav-icon {
   height: 20px;
 }
+
+aside {
+  height: 33%;
+  width: 200px;
+  position: fixed; /* fixed sidebar, doesn't move on scroll */
+  z-index: 1; /* stays on top */
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /* disables horizontal scroll */
+  top: 33%;
+  text-align: center;
+}
+
+aside ul {
+
+}
+
+.content {
+  float: right;
+}
+
+.homepage-quote {
+  float: right;
+}
+
+.homepage-quote-author {
+  float: right;
+}
