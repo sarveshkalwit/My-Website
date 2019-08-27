@@ -1,6 +1,6 @@
 body {
-  background-color: gray;
-  color: white;
+  background-color: white;
+  text-align: center;
 }
 
 li {
@@ -12,29 +12,52 @@ img.nav-icon {
 }
 
 aside {
-  height: 33%;
-  width: 200px;
+  height: 100%;
+  width: 20%;
   position: fixed; /* fixed sidebar, doesn't move on scroll */
   z-index: 1; /* stays on top */
   left: 0;
-  background-color: black;
+  background-color: grey;
   overflow-x: hidden; /* disables horizontal scroll */
-  top: 33%;
-  text-align: center;
+  top: 0;
+  text-align: left;
+  visibility: hidden;
 }
 
-aside ul {
-
+ul {
+  height: 100%;
+  transform: translate(0%, 35%);
 }
 
-.content {
-  float: right;
+li {
+  visibility: hidden;
+}
+
+li img {
+  visibility: visible;
+}
+
+li:hover {
+  visibility: visible;
+  color: purple;
+}
+
+.title {
+  float: center;
+  background-color: blue;
+  position: absolute;
+  /*transform: translate(0%, 50%);
+  height: 100%;
+  width: 100%;*/
+  padding: 25% 40%;
 }
 
 .homepage-quote {
   float: right;
+  background-color: green;
 }
 
 .homepage-quote-author {
   float: right;
+  background-color: purple;
 }
