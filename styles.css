@@ -1,92 +1,92 @@
 body {
-  background-color: white;
-  text-align: center;
+	background-color: white;
+	text-align: center;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 img.nav-icon {
-  height: 20px;
+	height: 20px;
 }
 
 aside {
-  height: 100%;
-  width: 20%;
-  position: fixed; /* fixed sidebar, doesn't move on scroll */
-  z-index: 1; /* stays on top */
-  left: 0;
-  background-color: white;
-  overflow-x: hidden; /* disables horizontal scroll */
-  top: 0;
-  text-align: left;
-  visibility: hidden;
+	height: 100%;
+	width: 20%;
+	position: fixed; /* fixed sidebar, doesn't move on scroll */
+	z-index: 1; /* stays on top */
+	left: 0;
+	background-color: white;
+	overflow-x: hidden; /* disables horizontal scroll */
+	top: 0;
+	text-align: left;
+	visibility: hidden;
 }
 
 ul {
-  height: 100%;
-  transform: translate(0%, 35%);
+	height: 100%;
+	transform: translate(0%, 35%);
 }
 
 li {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 li img {
-  visibility: visible;
+	visibility: visible;
 }
 
 li:hover {
-  visibility: visible;
-  color: black;
+	visibility: visible;
+	color: black;
 }
 
 .title {
-  float: center;
-  background-color: white;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin: -70px 0 0 -170px;
+	float: center;
+	background-color: white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -70px 0 0 -170px;
 }
 
 .homepage-quote {
-  float: right;
-  background-color: white;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+	float: right;
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
 }
 
 .year-dropdown {
-  position: relative;
-  display: inline-block;
-  color: white;
-  border: 1px;
+	position: relative;
+	display: inline-block;
+	color: white;
+	border: 1px;
 }
 
 .year-dropdown-button {
-  color: white;
-  border: none;
+	color: white;
+	border: none;
 }
 
 .year-dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
+	display: none;
+	position: absolute;
+	z-index: 1;
 }
 
 .year-dropdown-content a {
-  color: black;
-  text-decoration: none;
-  display: block;
+	color: black;
+	text-decoration: none;
+	display: block;
 }
 
 .year-dropdown-content a:hover {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .year-dropdown:hover .year-dropdown-content {
-  display: block;
+	display: block;
 }
