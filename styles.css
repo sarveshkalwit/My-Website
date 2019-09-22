@@ -58,3 +58,35 @@ li:hover {
   bottom: 0px;
   right: 0px;
 }
+
+.year-dropdown {
+  position: relative;
+  display: inline-block;
+  color: white;
+  border: 1px;
+}
+
+.year-dropdown-button {
+  color: white;
+  border: none;
+}
+
+.year-dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.year-dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.year-dropdown-content a:hover {
+  font-weight: bold;
+}
+
+.year-dropdown:hover .year-dropdown-content {
+  display: block;
+}
