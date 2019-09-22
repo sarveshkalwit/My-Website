@@ -21,23 +21,22 @@ aside {
 	overflow-x: hidden; /* disables horizontal scroll */
 	top: 0;
 	text-align: left;
-	visibility: hidden;
 }
 
-ul {
+aside > ul {
 	height: 100%;
 	transform: translate(0%, 35%);
 }
 
-li {
+aside > ul > li {
 	visibility: hidden;
 }
 
-li img {
+aside > ul > li img {
 	visibility: visible;
 }
 
-li:hover {
+aside > ul > li:hover {
 	visibility: visible;
 	color: black;
 }
