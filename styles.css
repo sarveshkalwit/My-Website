@@ -46,10 +46,9 @@ li:hover {
   float: center;
   background-color: white;
   position: absolute;
-  /*transform: translate(0%, 50%);
-  height: 100%;
-  width: 100%;*/
-  padding: 25% 40%;
+  top: 40%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
 }
 
 .homepage-quote {
