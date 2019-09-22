@@ -39,7 +39,7 @@ li img {
 
 li:hover {
   visibility: visible;
-  color: white;
+  color: black;
 }
 
 .title {
@@ -56,6 +56,6 @@ li:hover {
   float: right;
   background-color: white;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 0px;
 }
