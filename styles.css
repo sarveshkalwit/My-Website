@@ -55,11 +55,6 @@ li:hover {
 .homepage-quote {
   float: right;
   background-color: white;
-}
-
-.homepage-quote-author {
-  float: right;
-  background-color: white;
   position: absolute;
   top: 0px;
   right: 0px;
