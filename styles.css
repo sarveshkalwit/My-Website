@@ -88,4 +88,23 @@ aside > ul > li:hover {
 
 .year-dropdown:hover .year-dropdown-content {
 	display: block;
+	background-color: white;
+}
+
+#header {
+	position: fixed;
+	overflow-x: hidden;
+}
+
+.timeline-container {
+	display: inline-block;
+}
+
+.timeline-year {
+	display: inline-block;
+}
+
+#venture-card {
+	width: 25%;
+	border: 1px;
 }
