@@ -112,3 +112,7 @@ aside > ul > li:hover {
 	width: 25%;
 	border: 1px;
 }
+
+.curr-timeline-container {
+	display: inline-block;
+}
