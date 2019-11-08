@@ -3,14 +3,11 @@ body {
 	color: white;
 }
 
-#home-content {
-	//horizontal centering
-	margin: auto;
-	width: 50%;
+.horizontal-vertical-center {
+	width: 100%;
 	text-align: center;
 
-	//vertical centering
-	position: relative;
+	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
