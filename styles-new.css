@@ -1,0 +1,16 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#home-content {
+	//horizontal centering
+	margin: auto;
+	width: 50%;
+	text-align: center;
+
+	//vertical centering
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
