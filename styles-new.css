@@ -4,8 +4,13 @@ html, body {
 	color: white;
 	font-family: arial;
 
-	background-color: black;
+	/*
+	 * img credits:
+	 * JiaXin Lee (https://www.artstation.com/mgoes)
+	 */
 	background-image: url("images/pictures/home-background.jpg");
+
+	background-color: black;
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
 	background-attachment: fixed;
@@ -83,4 +88,8 @@ h1 {
 
 h3 {
 	font-size: 75px;
+}
+
+h5 {
+	font-size: 25px;
 }
