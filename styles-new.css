@@ -72,9 +72,15 @@ nav .nav-elem a:hover + p {
 /*
  * HEADER FORMATS
  */
-h1 {
+.impact {
 	font-family: impact;
-	font-size: 150px;
-	
-	margin-bottom: 20px;
+	margin: 0px 0px 0px 0px;
+}
+
+h1 {
+	font-size: 175px;
+}
+
+h3 {
+	font-size: 75px;
 }
