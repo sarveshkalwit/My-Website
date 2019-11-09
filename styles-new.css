@@ -27,6 +27,8 @@ nav ul {
 
 nav ul li {
 	visibility: hidden;
+	height: 40px;
+	line-height: 40px;
 }
 
 nav ul li:hover {
@@ -38,3 +40,8 @@ nav ul li img {
 	height: 36px;
 	visibility: visible;
 }
+
+nav ul li a {
+	text-decoration: none;
+}
+
