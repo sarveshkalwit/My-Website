@@ -4,6 +4,7 @@ html, body {
 
 	background-color: black;
 	color: white;	
+	font-family: arial;
 }
 
 #home-content {
@@ -12,15 +13,19 @@ html, body {
 
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-70%);
 }
 
+
+/*
+ * NAVIGATION
+ */
 nav {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	width: 15%;
-	margin-left: 5%;
+	margin-left: 2%;
 }
 
 nav .nav-elem a {
@@ -36,6 +41,9 @@ nav .nav-elem {
 }
 
 nav .nav-elem p {
+	font-family: courier;
+	font-size: 12px;
+
 	float: auto;
 	visibility: hidden;
 	
@@ -55,3 +63,12 @@ nav .nav-elem a:hover + p {
 }
 
 
+/*
+ * HEADER FORMATS
+ */
+h1 {
+	font-family: impact;
+	font-size: 150px;
+	
+	margin-bottom: 20px;
+}
