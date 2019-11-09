@@ -1,16 +1,22 @@
 html, body {
 	height: 100%;
 	display: flex;
+	color: white;
+	font-family: arial;
 
 	background-color: black;
-	color: white;	
-	font-family: arial;
+	background-image: url("images/pictures/home-background.jpg");
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-attachment: fixed;
 }
 
 #home-content {
+	/* horizontal centering */
 	width: 100%;
 	text-align: center;
 
+	/* vertical centering */
 	position: absolute;
 	top: 50%;
 	transform: translateY(-70%);
@@ -32,7 +38,7 @@ nav .nav-elem a {
 	text-decoration: none;
 }
 
-nav .nav-elem {
+.nav-elem {
 	display: inline-block;
 	height: 36px;
 	line-height: 36px;
