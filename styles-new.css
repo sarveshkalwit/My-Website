@@ -100,8 +100,8 @@ h5 {
  * HOMEPAGE QUOTE
  */
 #home-quote {
-	width: 325px;
-	height: 325px;
+	width: 300px;
+	height: 300px;
 	
 	position: absolute;
 	bottom: 0%;
@@ -113,16 +113,20 @@ h5 {
 	border-style: solid;
 	border-width: 5px;
 	border-color: blue;
+
+	-webkit-transition: width 0.5s, height 0.5s;
 }
 
 #home-quote:hover {
 	border-color: white;
+	width: 350px;
+	height: 350px;
 }
 
 #home-quote-content {
 	margin-left: 12%;
-	margin-top: 30%;
-	width: 75%;
+	margin-top: 25%;
+	width: 80%;
 }
 
 #home-quote-content a {
