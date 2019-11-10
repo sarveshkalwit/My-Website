@@ -1,144 +1,151 @@
-body {
-	background-color: white;
-	text-align: center;
-}
-
-li {
-	list-style-type: none;
-}
-
-img.nav-icon {
-	height: 20px;
-}
-
-aside {
+html, body {
 	height: 100%;
-	width: 20%;
-	position: fixed; /* fixed sidebar, doesn't move on scroll */
-	z-index: 1; /* stays on top */
-	left: 0;
-	background-color: white;
-	overflow-x: hidden; /* disables horizontal scroll */
-	text-align: left;
-}
-
-aside > ul {
-	height: 100%;
-	transform: translate(0%, 35%);
-	float: left;
-}
-
-aside > ul > li {
-	visibility: hidden;
-}
-
-aside > ul > li img {
-	visibility: visible;
-}
-
-aside > ul > li:hover {
-	visibility: visible;
-	color: black;
-}
-
-#title {
-	float: center;
-	background-color: white;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	margin: -70px 0 0 -170px;
-}
-
-#homepage-quote {
-	float: right;
-	background-color: white;
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-}
-
-.year-dropdown {
-	position: relative;
-	display: inline-block;
+	display: flex;
 	color: white;
-	border: 1px;
-}
+	font-family: courier;
 
-.year-dropdown-button {
-	color: white;
-	border: none;
-}
-
-.year-dropdown-content {
-	display: none;
-	position: absolute;
-	z-index: 1;
-}
-
-#year-dropdown-content a {
-	color: black;
-	text-decoration: none;
-	display: block;
-}
-
-#year-dropdown-content a:hover {
-	font-weight: bold;
-}
-
-#year-dropdown:hover .year-dropdown-content {
-	display: block;
-	background-color: white;
-}
-
-.header {
+	max-width: 100%;
 	overflow-x: hidden;
-	float: center;
-	background-color: white;
+
+	/*
+	 * img credits:
+	 * JiaXin Lee (https://www.artstation.com/mgoes)
+	 */
+	background-image: url("images/pictures/home-background.jpg");
+
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-attachment: fixed;
+}
+
+#home-content {
+	/* horizontal centering */
 	width: 100%;
-	padding-top: 10%;
+	text-align: center;
+
+	/* vertical centering */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-70%);
 }
 
-#timeline-container {
+
+/*
+ * NAVIGATION
+ */
+nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 15%;
+	margin-left: 2%;
+}
+
+nav .nav-elem a {
+	text-decoration: none;
+}
+
+.nav-elem {
 	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	width: 100%;
+	padding-bottom: 5px;
 }
 
-#timeline-year {
-	display: inline-block;
-	float: bottom;
+nav .nav-elem p {
+	font-size: 12px;
+
+	float: auto;
+	visibility: hidden;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-#venture-card {
-	width: 25%;
-	border: 1px;
+nav .nav-elem img {
+	float: left;
+	width: 36px;
+	height: 36px;
+	padding-right: 12px;
 }
 
-#curr-timeline-container {
-	display: inline-block;
-	border: 5px;
-	width: auto;
+nav .nav-elem a:hover + p {
+	visibility: visible;
 }
 
-#right-whitespace {
-	height: 100%;
-	position: fixed;
-	z-index: 1;
-	right: 0;
-	background-color: white;
-	overflow-x: hidden;
-	float: right;
+
+/*
+ * HEADER FORMATS
+ */
+.impact {
+	font-family: impact;
+	margin: 0px 0px 0px 0px;
 }
 
-#curr-timeline-container {
-	height: 33%;
-	width: fill;
-	border: 1px;
+h1 {
+	font-size: 175px;
 }
 
-#curr-timestamp {
-
+h3 {
+	font-size: 75px;
 }
 
-#all-links {
-	position: relative;
+h5 {
+	font-size: 25px;
+}
+
+/*
+ * HOMEPAGE QUOTE
+ */
+#home-quote {
+	width: 300px;
+	height: 300px;
+	
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	margin-right: 5%;
+	margin-bottom: 4%;
+
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue;
+
+	-webkit-transition: width 0.5s, height 0.5s;
+}
+
+#home-quote:hover {
+	border-color: white;
+	width: 350px;
+	height: 350px;
+}
+
+#home-quote-content {
+	margin-left: 12%;
+	margin-top: 25%;
+	width: 80%;
+}
+
+#home-quote-content a {
+	text-decoration: none;
+	color: white;
+}
+
+#home-quote-content a p {
+	text-align: center;
+	font-size: 30px;
+}
+
+#home-quote-author {
+	clear: both;
+	margin-right: 10px;
+	margin-top: 10%;
+}
+
+#home-quote-author p {
+	text-align: center;
+	font-size: 15px;
 }
