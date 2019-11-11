@@ -27,7 +27,7 @@ html, body {
 	/* vertical centering */
 	position: absolute;
 	top: 50%;
-	transform: translateY(-70%);
+	transform: translateY(-50%);
 }
 
 
@@ -85,11 +85,11 @@ nav .nav-elem a:hover + p {
 }
 
 h1 {
-	font-size: 175px;
+	font-size: 200px;
 }
 
 h3 {
-	font-size: 75px;
+	font-size: 65px;
 }
 
 h5 {
