@@ -11,7 +11,7 @@ html, body {
 	 * img credits:
 	 * JiaXin Lee (https://www.artstation.com/mgoes)
 	 */
-	background-image: url("../images/pictures/home-background.jpg");
+	background-image: url("../images/pictures/home-background.jpeg");
 
 	background-color: black;
 	background-repeat: no-repeat;
@@ -42,11 +42,11 @@ nav {
 	margin-left: 2%;
 }
 
-nav .nav-elem a {
+nav .nav-icon a {
 	text-decoration: none;
 }
 
-.nav-elem {
+.nav-icon {
 	display: inline-block;
 	height: 36px;
 	line-height: 36px;
@@ -54,7 +54,7 @@ nav .nav-elem a {
 	padding-bottom: 5px;
 }
 
-nav .nav-elem p {
+nav .nav-icon p {
 	font-size: 12px;
 
 	float: auto;
@@ -64,14 +64,14 @@ nav .nav-elem p {
 	margin-bottom: 0px;
 }
 
-nav .nav-elem img {
+nav .nav-icon img {
 	float: left;
 	width: 36px;
 	height: 36px;
 	padding-right: 12px;
 }
 
-nav .nav-elem a:hover + p {
+nav .nav-icon a:hover + p {
 	visibility: visible;
 }
 
@@ -148,4 +148,16 @@ h5 {
 #home-quote-author p {
 	text-align: center;
 	font-size: 15px;
+}
+
+/*
+ * ICONS
+ */
+.icon img {
+	width: 36px;
+	height: 36px;
+}
+
+.icon p {
+	font-size: 12px;
 }
