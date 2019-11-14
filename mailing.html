@@ -12,8 +12,11 @@
 	<div id="mailing-content">
 		<h4>join my mailing list to receive updates on my newest endeavors</h4>
 
-		<form>
-			<input type="text" name="email" placeholder="your.email@mail.com" autofocus>
+		<form action="emails.php" method="post">
+			<input type="text" name="email" value=" {{ row[2] }} "
+				placeholder="your.email@mail.com" autofocus>
+			<input type="submit" name="subscribe">
+			<input type="submit" name="unsubscribe">
 		</form>
 
 		<div class="icon">
