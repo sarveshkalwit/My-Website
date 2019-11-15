@@ -13,20 +13,18 @@
 		<h4>join my mailing list to receive updates on my newest endeavors</h4>
 
 		<form action="emails.php" method="post">
-			<input type="text" name="email" value=" {{ row[2] }} "
+			<input type="text" name="email"
 				placeholder="your.email@mail.com" autofocus>
-			<input type="submit" name="subscribe">
-			<input type="submit" name="unsubscribe">
-		</form>
+			<br>
 
-		<div class="icon">
-			<img src="images/icons/subscribe.png">
+			<input type="image" src="images/icons/subscribe.png"
+				alt="subscribe" name="subscribe">
 			<p>subscribe</p>
-		</div>
-		<div class="icon">
-			<img src="images/icons/unsubscribe.png">
+
+			<input type="image" src="images/icons/unsubscribe.png"
+				alt="unsubscribe" name="unsubscribe">
 			<p>unsubscribe</p>
-		</div>
+		</form>
 
 		<p id="mailing-msg"></p>
 		

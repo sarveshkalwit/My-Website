@@ -1,3 +1,6 @@
+/*
+ * HTML
+ */
 html, body {
 	height: 100%;
 	display: flex;
@@ -19,6 +22,9 @@ html, body {
 	background-attachment: fixed;
 }
 
+/*
+ * HOMEPAGE
+ */
 #home-content {
 	/* horizontal centering */
 	width: 100%;
@@ -159,5 +165,17 @@ h5 {
 }
 
 .icon p {
+	font-size: 12px;
+}
+
+/*
+ * FORMS
+ */
+button, input[type="image"] {
+	width: 36px;
+	height: 36px;
+}
+
+form p {
 	font-size: 12px;
 }
