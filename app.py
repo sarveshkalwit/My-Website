@@ -6,6 +6,18 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
+@app.route('/ventures')
+def ventures():
+	return render_template('ventures.html')
+
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html')
+
 @app.route('/mailing')
 def mailing():
 	return render_template('mailing.html')
