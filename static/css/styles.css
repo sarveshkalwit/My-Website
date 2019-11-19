@@ -14,7 +14,7 @@ html, body {
 	 * img credits:
 	 * https://wallpaperaccess.com/british-columbia
 	 */
-	background-image: url("images/pictures/home-background.jpeg");
+	background-image: url("../images/pictures/home-background.jpeg");
 
 	background-color: black;
 	background-repeat: no-repeat;
@@ -46,6 +46,7 @@ nav {
 	transform: translateY(-50%);
 	width: 15%;
 	margin-left: 2%;
+	z-index: 10;
 }
 
 nav .nav-icon a {
