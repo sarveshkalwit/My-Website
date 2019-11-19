@@ -1,0 +1,2 @@
+Dec 2018, RateMyLift, Built a website which provides users live feedback when weightlifting to ensure safety
+Sep 2019, SupremeBot, A bot which automatically buys desired items from Supreme's website.
