@@ -215,4 +215,5 @@ form p {
 	list-style-type: none;
 	float: left;
 	text-align: left;
+	padding-left: 0px;
 }
