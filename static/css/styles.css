@@ -22,6 +22,7 @@ html, body {
 	background-attachment: fixed;
 }
 
+
 /*
  * HOMEPAGE
  */
@@ -103,6 +104,7 @@ h5 {
 	font-size: 25px;
 }
 
+
 /*
  * HOMEPAGE QUOTE
  */
@@ -157,6 +159,7 @@ h5 {
 	font-size: 15px;
 }
 
+
 /*
  * ICONS
  */
@@ -169,8 +172,9 @@ h5 {
 	font-size: 12px;
 }
 
+
 /*
- * FORMS
+ * FORM
  */
 button, input[type="image"] {
 	width: 36px;
@@ -179,4 +183,28 @@ button, input[type="image"] {
 
 form p {
 	font-size: 12px;
+}
+
+
+/*
+ * PORTFOLIO
+ */
+#venture-container {
+	background-color: grey;
+	height: 50%;
+	
+	/* horizontal centering */
+	width: 70%;
+	margin-left: 15%;
+
+	/* vertical centering */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#venture-list {
+	list-style-type: none;
+	float: left;
+	text-align: left;
 }
