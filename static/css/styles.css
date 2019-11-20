@@ -203,6 +203,14 @@ form p {
 	transform: translateY(-50%);
 }
 
+#div-ventures-list {
+	overflow: auto;
+	width: 25%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
 #ventures-list {
 	list-style-type: none;
 	float: left;
