@@ -4,19 +4,13 @@
 html, body {
 	height: 100%;
 	display: flex;
-	color: white;
+	color: black;
 	font-family: courier;
 
 	max-width: 100%;
 	overflow-x: hidden;
 
-	/*
-	 * img credits:
-	 * https://wallpaperaccess.com/british-columbia
-	 */
-	background-image: url("../images/pictures/home-background.jpeg");
-
-	background-color: black;
+	background-color: white;
 	background-repeat: no-repeat;
 	background-position: 0% 60%;
 	background-attachment: fixed;
@@ -63,7 +57,7 @@ nav .nav-icon a {
 }
 
 nav .nav-icon p {
-	font-size: 12px;
+	font-size: 10px;
 
 	float: auto;
 	visibility: hidden;
@@ -127,7 +121,7 @@ h5 {
 }
 
 #home-quote:hover {
-	border-color: white;
+	border-color: black;
 	width: 350px;
 	height: 350px;
 }
@@ -140,7 +134,7 @@ h5 {
 
 #home-quote-content a {
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
 #home-quote-content a p {
