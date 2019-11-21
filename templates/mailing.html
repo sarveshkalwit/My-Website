@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
+{% extends 'blueprint.html' %}
+
+{% block head %}
 	<title>Sarvesh Kalwit | Mailing</title>
+{% endblock %}
 
-	<link rel="stylesheet" href="styles.css">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-</head>
-
-<body>
+{% block body %}
 	<!--content-->
 	<div id="mailing-content">
 		<h4>join my mailing list to receive updates on my newest endeavors</h4>
@@ -17,11 +14,11 @@
 				placeholder="your.email@mail.com" autofocus>
 			<br>
 
-			<input type="image" src="images/icons/subscribe.png"
+			<input type="image" src="../static/images/icons/subscribe.png"
 				alt="subscribe" name="subscribe">
 			<p>subscribe</p>
 
-			<input type="image" src="images/icons/unsubscribe.png"
+			<input type="image" src="../static/images/icons/unsubscribe.png"
 				alt="unsubscribe" name="unsubscribe">
 			<p>unsubscribe</p>
 		</form>
@@ -31,47 +28,4 @@
 		<!--you have successfully subscribed. welcome to my journey!-->
 		<!--you have successfully unsubscribed. i'm sorry to see you go!-->
 	</div>
-
-
-	<!--navbar-->
-	<!--
-		img credits for all imgs:
-		(https://www.flatnav-icon.com/authors/freepik)
-		from searches house, rocket, info, email
-	-->
-	<nav>
-		<div class="nav-icon">
-			<a href="index.html">
-				<img src="images/icons/home.png">
-			</a>
-			<p>home</p>
-		</div>
-		<div class="nav-icon">
-			<a href="ventures.html">
-				<img src="images/icons/ventures.png">
-			</a>
-			<p>ventures</p>
-		</div>
-		<div class="nav-icon">
-			<a href="about.html">
-				<img src="images/icons/about.png">
-			</a>
-			<p>about</p>
-		</div>
-		<div class="nav-icon">
-			<a href="contact.html">
-				<img src="images/icons/contact.png">
-			</a>
-			<p>contact</p>
-		</div>
-		<div class="nav-icon">
-			<a href="mailing.html">
-				<img src="images/icons/follow.png">
-			</a>
-			<p>join mailing list</p>
-		</div>
-	</nav>
-
-
-</body>
-</html>
+{% endblock %}
