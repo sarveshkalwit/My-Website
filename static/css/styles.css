@@ -175,7 +175,7 @@ form p {
 /*
  * PORTFOLIO
  */
-#venture-container {
+#project-container {
 	background-color: grey;
 	height: 50%;
 	
@@ -189,7 +189,7 @@ form p {
 	transform: translateY(-50%);
 }
 
-#div-ventures-list {
+#div-project-list {
 	overflow: auto;
 	width: 25%;
 	height: 100%;
@@ -197,7 +197,7 @@ form p {
 	float: left;
 }
 
-#ventures-list {
+#project-list {
 	list-style-type: none;
 	float: left;
 	text-align: left;
