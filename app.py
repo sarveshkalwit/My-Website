@@ -22,10 +22,6 @@ def about():
 def contact():
 	return render_template('contact.html')
 
-@app.route('/mailing')
-def mailing():
-	return render_template('mailing.html')
-
 @app.route('/quote.txt')
 def quote():
 	return render_template('quote.txt')
