@@ -7,11 +7,12 @@
 {% block body %}
 	<!--content-->
 	<div id="mailing-content">
-		<h4>join my mailing list to receive updates on my newest endeavors</h4>
+		<p>join my mailing list to receive updates on my newest endeavors</p>
 
 		<form action="emails.php" method="post">
 			<input type="text" name="email"
-				placeholder="your.email@mail.com" autofocus>
+				placeholder="your.email@mail.com" autofocus required
+				pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/">
 			<br>
 
 			<input type="image" src="../static/images/icons/subscribe.png"
