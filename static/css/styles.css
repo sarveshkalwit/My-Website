@@ -233,3 +233,18 @@ footer a img {
 	height: 20px;
 	width: 20px;
 }
+
+
+/*
+ * CENTERING
+ */
+.center-wrap {
+	/* horizontal centering */
+	width: 100%;
+	margin-left: 50%;
+
+	/* vertical centering */
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
