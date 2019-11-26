@@ -236,12 +236,24 @@ footer a img {
 
 
 /*
+ * ABOUT
+ */
+#about-nav {
+	text-align: right;
+}
+
+#about-nav ul {
+	list-style-type: none;
+}
+
+
+/*
  * CENTERING
  */
 .center-wrap {
 	/* horizontal centering */
 	width: 100%;
-	margin-left: 50%;
+	text-align: center;
 
 	/* vertical centering */
 	position: absolute;
