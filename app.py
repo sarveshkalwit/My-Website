@@ -1,10 +1,13 @@
 from flask import Flask, render_template, url_for
+from meta import meta, Meta
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return render_template('index.html')
+	return render_template('index.html',
+		title = meta['index'][Meta.title.value],
+		desc = meta['index'][Meta.desc.value])
 
 '''
 @app.route('/projects')
