@@ -1,58 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.less') }}">
 	{% block head %}{% endblock %}
 </head>
 <body>
-	<!--navbar-->
-	<!--
-		img credits for all imgs:
-		(https://www.flaticon.com/authors/freepik)
-		from searches house, rocket, info, email
-	-->
-	<nav>
-		<div class="nav-icon">
-			<a href="{{ url_for('index') }}">
-				<img src="../static/images/icons/home.png">
-			</a>
-			<p>home</p>
-		</div>
-		<div class="nav-icon">
-			<a href="{{ url_for('about') }}">
-				<img src="../static/images/icons/about.png">
-			</a>
-			<p>about</p>
-		</div>
-		<div class="nav-icon">
-			<a href="{{ url_for('projects') }}">
-				<img src="../static/images/icons/projects.png">
-			</a>
-			<p>projects</p>
-		</div>
-		<div class="nav-icon">
-			<a href="{{ url_for('ventures') }}">
-				<img src="../static/images/icons/ventures.png">
-			</a>
-			<p>ventures</p>
-		</div>
-		<div class="nav-icon">
-			<a href="{{ url_for('contact') }}">
-				<img src="../static/images/icons/contact.png">
-			</a>
-			<p>contact/mailing</p>
-		</div>
-	</nav>
-
-	<!--footer-->
-	<footer>
-		<a href="https://www.linkedin.com/in/sarvesh-kalwit/">
-			<img src="../static/images/icons/linkedin.png">
-		</a>
-		<a href="https://github.com/sarveshkalwit">
-			<img src="../static/images/icons/github.png">
-		</a>
-	</footer>
 	{% block body %}{% endblock %}
 </body>
 </html>

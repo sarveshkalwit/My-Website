@@ -6,6 +6,7 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
+'''
 @app.route('/projects')
 def projects():
 	return render_template('projects.html')
@@ -25,6 +26,8 @@ def contact():
 @app.route('/quote.txt')
 def quote():
 	return render_template('quote.txt')
+'''
 
 if __name__ == '__main__':
 	app.run(debug=True)
+
