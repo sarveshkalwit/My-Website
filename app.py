@@ -7,7 +7,8 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html',
 		title = meta['index'][Meta.title.value],
-		desc = meta['index'][Meta.desc.value])
+		desc = meta['index'][Meta.desc.value],
+		canon = meta['index'][Meta.canon.value])
 
 '''
 @app.route('/projects')
