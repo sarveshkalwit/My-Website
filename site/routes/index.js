@@ -18,11 +18,9 @@ router.get('/', function(req, res, next) {
 		paper: true,
 		usePolygon: false
 	})
-	alpaca.getPortfolioHistory({
-	])
 		
 
-	res.render('index', { title: 'Express' });
+	res.render('index', { "test": 'hi' });
 });
 
 module.exports = router;
