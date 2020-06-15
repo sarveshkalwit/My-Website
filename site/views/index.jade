@@ -3,7 +3,10 @@ extends layout
 block content
 	nav.navbar.navbar-expand-md.navbar-light.bg-light.fixed-top
 		a.navbar-brand(href='#') Navbar
-		button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo02', aria-controls='navbarTogglerDemo02', aria-expanded='false', aria-label='Toggle navigation')
+		button.navbar-toggler(type='button', data-toggle='collapse',
+				data-target='#navbarTogglerDemo02',
+				aria-controls='navbarTogglerDemo02', aria-expanded='false',
+				aria-label='Toggle navigation')
 			span.navbar-toggler-icon
 		#navbarTogglerDemo02.collapse.navbar-collapse
 			ul.navbar-nav.mr-auto.mt-2.mt-lg-0
@@ -16,14 +19,26 @@ block content
 
 	section#about.full-h.flex.f-row-col
 		div.flex.half
-			p Hey, I'm Sarvesh
+			h1 Hey, I'm Sarvesh
 			img(src='./')
 		div.flex.half
 			p
-				| I was born and raised in the Silicon Valley, and I'm 
-			p Background & edu
-			p Career interests
-			p General about
+				| I was born and raised in the Silicon Valley, and I'm currently
+				| pursuing undergraduate degrees in computer science and math at 
+				a(href='https://www.utexas.edu/') The University of Texas at Austin
+				| . Alongside my classes, I'm an Incubator lead at 
+				a(href='https://www.txconvergent.org/') Texas Convergent 
+				| and the Technology Director at the 
+				a(href='https://www.texasakpsi.com/') Iota chapter 
+				| of Alpha Kappa Psi. After graduation, I hope to work at a disruptive
+				| technology company.
+			p
+				| Academically speaking, I'm interested in ___.
+				| My main technical skills include ___.
+			p
+				| In my free time, I enjoy lifting weights, working on side projects, 
+				| reading, watching standup comedy, producing music, exploring new 
+				| places, and hanging out with friends.
 
 	section#projects.flex
 		div
@@ -35,7 +50,20 @@ block content
 		div
 			// api call for alpaca stats
 		div
-			p description
+			p
+				| My interest in finance started when ___.
+				| While the allure of getting rich is definitely present, I was 
+				| more intrigued by the unspoken challenge of beating the impossible (?)
+			p
+				| My current trading strategy is split evenly between curve
+				| fitting prices to predict the performance of moderately volatile 
+				| stocks, and catching and riding asset uptrends as they form.
+
+	// potential music section
+
+	// potential advice/about section
+
+	// blog section?
 
 	footer
 		div
