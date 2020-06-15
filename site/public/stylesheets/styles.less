@@ -21,7 +21,9 @@
 @md: 768px;
 @lg: 992px;
 
-@royal-gold: #ffbd1b;
+@royal-gold: #FFBD1B;
+@muted-red: #FFE8E8;
+@muted-green: #E8FFE8;
 
 html,
 body {
@@ -40,7 +42,9 @@ p {
 	margin-bottom: 0 !important;
 
 	a {
-		color: @royal-gold !important;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -58,13 +62,31 @@ p {
 	}
 }
 
+#projects {
+	background-color: @muted-red;
+}
+
+#trading {
+	background-color: @muted-green;
+}
+
 nav {
 	min-height: @navheight;
 }
 
 section {
-	padding: 30px 30px;
-	padding-bottom: 10px;
+	height: auto;
+	min-height: 50vh;
+	padding: 0 15px;
+
+	div {
+		padding: 0 15px;
+
+		img {
+			width: 100px;
+			height: auto;
+		}
+	}
 
 	@media only screen and (min-width: @md + 1) {
 		flex-direction: row !important;
