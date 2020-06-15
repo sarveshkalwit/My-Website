@@ -17,11 +17,11 @@ block content
 				li.nav-item
 					a.nav-link(href='#') Link
 
-	section#about.flex
-		div.flex
+	section#about.flex.collapse-col
+		div.flex.full
 			h1 Hey, I'm Sarvesh!
 			img(src='../images/headshot.png')
-		div.flex
+		div.flex.full
 			p
 				| I was born and raised in the Silicon Valley, and I'm currently
 				| pursuing undergraduate degrees in computer science and math at 
@@ -46,8 +46,8 @@ block content
 				| reading, watching standup comedy, producing music, exploring new 
 				| places, and hanging out with friends.
 
-	section#projects.flex
-		div.flex
+	section#projects.flex.collapse-col
+		div.flex.full
 			h2 Projects
 			a(href='https://github.com/sarveshkalwit'
 					rel='noopener noreferrer',
@@ -66,7 +66,7 @@ block content
 					p
 						span XX
 					p all-time contributions
-		div.flex
+		div.flex.full
 			p
 				| My favorite part about learning computer science is that it teaches 
 				| me how to think critically. It's nephew, software engineering, helps 
@@ -87,8 +87,8 @@ block content
 					target='_blank') restricted web app 
 				| that provides numerous services to the members in my organization.
 
-	section#trading.flex
-		div.flex
+	section#trading.flex.collapse-col
+		div.flex.full
 			h2 Trading
 			a(href='https://alpaca.markets/'
 					rel='noopener noreferrer',
@@ -107,17 +107,17 @@ block content
 					p
 						span XX
 					p portfolio growth in the last year
-		div.flex
+		div.flex.full
 			p
 				| I thoroughly enjoy exploring the intersection between technology 
 				| and business. While the allure of getting rich is definitely present, 
-				| I was drawn to the stock market more so by the unspoken challenge of 
+				| I was drawn to the stock market more so by the implicit challenge of 
 				| making some sense out of something seemingly nonsensical.
 			p
 				| My current trading strategy is split evenly between curve
 				| fitting prices to predict the performance of moderately volatile 
 				| stocks, and catching and riding asset uptrends as they form. I prefer
-				| to keep my exact net worth hidden, but the percentage returns of my 
+				| to keep my exact net worth private, but the percentage returns of my 
 				a(href='/',
 					rel='noopener noreferrer',
 					target='_blank') Alpaca 
@@ -129,8 +129,8 @@ block content
 
 	// blog section?
 
-	footer.flex.f-row
-		div.flex.f-row
+	footer.flex.f-row.collapse-col
+		div.flex.full.f-row
 			a(href='https://www.linkedin.com/in/sarvesh-kalwit/'
 					rel='noopener noreferrer',
 					target='_blank')
@@ -149,5 +149,12 @@ block content
 				img(src='../images/soundcloud.svg')
 			// resume
 			// email
-		div
-			// email subscription
+		div.full
+			form.flex
+				div.full
+					label(for='email') Subscribe and stay updated!
+				div.flex.f-row
+					input#email.form-control(type='email',
+						placeholder='your.email@service.ext')
+					button.btn(type='submit') Submit
+
