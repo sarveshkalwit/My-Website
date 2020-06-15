@@ -16,6 +16,11 @@
 		url('../fonts/Asap/otf/Asap-Regular.otf') format('opentype');
 }
 
+/* variables */
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+
 html,
 body {
 	margin: 0;
@@ -44,6 +49,11 @@ section {
 	text-align: center;
 }
 
-.f-row {
-	flex-direction: row;
+.f-row-col {
+	@media only screen and (max-width: @md) {
+		flex-direction: column;
+	}
+	@media only screen and (min-width: @md + 1) {
+		flex-direction: row;
+	}
 }
