@@ -7,6 +7,7 @@ const Alpaca = require('@alpacahq/alpaca-trade-api')
 router.get('/', function(req, res, next) {
 	// Github API calls
 		// https://stackoverflow.com/questions/21869795/github-api-retrieve-user-commits
+		// https://gist.github.com/paulmillr/2657075
 	
 	// Alpaca API calls
 	const startDate = "";
