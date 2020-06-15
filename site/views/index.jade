@@ -1,7 +1,7 @@
 extends layout
 
 block content
-	nav.navbar.navbar-expand-md.navbar-light.bg-light.fixed-top
+	nav.navbar.navbar-expand-md.navbar-light.bg-light
 		a.navbar-brand(href='#') Navbar
 		button.navbar-toggler(type='button', data-toggle='collapse',
 				data-target='#navbarTogglerDemo02',
@@ -17,11 +17,11 @@ block content
 				li.nav-item
 					a.nav-link(href='#') Link
 
-	section#about.full-h.flex.f-row-col
-		div.flex.half
+	section#about.flex
+		div.flex
 			h1 Hey, I'm Sarvesh
 			img(src='./')
-		div.flex.half
+		div.flex
 			p
 				| I was born and raised in the Silicon Valley, and I'm currently
 				| pursuing undergraduate degrees in computer science and math at 

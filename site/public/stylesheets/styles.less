@@ -41,39 +41,34 @@ p {
 	}
 }
 
-.full-h {
-	height: 100vh;
-	min-height: 100vh;
+@navheight: 64px;
+#about {
+	@navheight: 64px;
+	@height: calc(100vh - @navheight);
+	height: @height;
+	min-height: @height;
+	padding-bottom: @navheight;
+}
+
+nav {
+	min-height: @navheight;
+}
+
+section {
+	padding: 0 30px;
+
+	@media only screen and (min-width: @md + 1) {
+		flex-direction: row !important;
+	}
 }
 
 .flex {
+	width: 100%;
+	height: 100%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-}
-
-.half {
-	@media only screen and (max-width: @md) {
-		width: 100%;
-		height: 50%;
-	}
-	@media only screen and (min-width: @md + 1) {
-		width: 50%;
-		height: 100%;
-	}
-}
-
-.f-row-col {
-	@media only screen and (max-width: @md) {
-		flex-direction: column;
-	}
-	@media only screen and (min-width: @md + 1) {
-		flex-direction: row;
-	}
-}
-
-.text-center {
 	text-align: center;
 }
