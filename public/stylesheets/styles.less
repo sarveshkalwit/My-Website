@@ -54,12 +54,9 @@ p {
 	}
 }
 
-@navheight: 56px;
 #about {
-	@height: calc(100vh - @navheight);
-	height: 100%;
-	min-height: @height;
-	padding-bottom: @navheight;
+	height: 100vh;
+	min-height: 100vh;
 
 	img {
 		width: 90%;
@@ -74,19 +71,6 @@ p {
 #trading {
 	background-color: @muted-green;
 }
-
-nav {
-	max-height: @navheight;
-
-	.nav-link {
-		background-color: white;
-	}
-
-	.white {
-		background-color: white;
-	}
-}
-
 
 section {
 	height: auto;
