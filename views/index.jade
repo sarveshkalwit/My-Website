@@ -83,11 +83,11 @@ block content
 				div
 					p 
 						span XX
-					p contributions in the last week
+					p commits in the last week
 				div
 					p
 						span XX
-					p all-time contributions
+					p all-time commits
 		div.flex.full
 			p
 				| My favorite part about learning computer science and software 
@@ -143,6 +143,31 @@ block content
 					rel='noopener noreferrer',
 					target='_blank') Robinhood 
 				| portfolio are shown.
+
+	section#contact.flex
+		div.flex
+			h2 Contact
+			form#inquiry.flex
+				label Let's chat!
+				input#inquiry-name(
+					type='text',
+					placeholder='name'
+				)
+				input#inquiry-email(
+					type='email',
+					placeholder='email@domain.com'
+				)
+				input#inquiry-subject(
+					type='text',
+					placeholder='*subject',
+					required
+				)
+				textarea#inquiry-content(
+					placeholder='*content',
+					rows='5',
+					cols='35',
+					required
+				)
 	
 	// potential music section
 	
@@ -152,12 +177,12 @@ block content
 	
 	footer.flex.f-row.collapse-col
 		div.full
-			form.flex
+			form#subscription.flex
 				div.full
 					label(for='email') Subscribe and stay updated!
 				div.flex.f-row
 					input#email.form-control(type='email',
-						placeholder='your.email@service.ext')
+						placeholder='email@domain.com')
 					button.btn(type='submit') Submit
 
 // https://freefrontend.com/css-arrows/
