@@ -54,9 +54,8 @@ p {
 	}
 }
 
-@navheight: 64px;
+@navheight: 56px;
 #about {
-	@navheight: 64px;
 	@height: calc(100vh - @navheight);
 	height: 100%;
 	min-height: @height;
@@ -77,8 +76,17 @@ p {
 }
 
 nav {
-	min-height: @navheight;
+	max-height: @navheight;
+
+	.nav-link {
+		background-color: white;
+	}
+
+	.white {
+		background-color: white;
+	}
 }
+
 
 section {
 	height: auto;
@@ -107,7 +115,7 @@ section {
 
 footer {
 	height: auto;
-	padding: 30px 15px;
+	padding: 45px 15px;
 
 	div {
 		width: 50%;
