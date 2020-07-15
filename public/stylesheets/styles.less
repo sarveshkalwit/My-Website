@@ -24,7 +24,9 @@
 @royal-gold: #FFBD1B;
 @muted-red: #FFE8E8;
 @muted-green: #E8FFE8;
+@muted-blue: #E6FFFF;
 @maroon: #800000;
+@bronze: #D99700;
 
 html,
 body {
@@ -43,8 +45,11 @@ p {
 	margin-bottom: 0 !important;
 
 	a {
+		color: @bronze;
+
 		&:hover {
-			text-decoration: none;
+			color: @bronze;
+			font-style: underline;
 		}
 	}
 }
@@ -64,7 +69,7 @@ p {
 }
 
 #projects {
-	background-color: @muted-red;
+	background-color: @muted-blue;
 }
 
 #trading {
@@ -80,6 +85,8 @@ section {
 	padding: 30px 15px;
 
 	div {
+		width: auto;
+		max-width: 400px;
 		padding: 0 15px;
 
 		img {
