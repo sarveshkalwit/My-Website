@@ -4,8 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
+var connectRouter = require('./routes/connect');
 
 var app = express();
 
@@ -18,8 +20,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser(urlencoded({extended: true})));
 
 app.use('/', indexRouter);
+app.use('/connect', connectRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
