@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-const axios = require('axios');
-const Alpaca = require('@alpacahq/alpaca-trade-api')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,15 +8,6 @@ router.get('/', function(req, res, next) {
 		// https://gist.github.com/paulmillr/2657075
 	
 	// Alpaca API calls
-	const startDate = "";
-	const todayDate = "";
-	const alpaca = new Alpaca({
-		keyId: process.env.APCA_API_KEY_ID,
-		secretKey: process.env.APCA_API_SECRET_KEY,
-		paper: true,
-		usePolygon: false
-	})
-		
 
 	res.render('index', { "test": 'hi' });
 });
